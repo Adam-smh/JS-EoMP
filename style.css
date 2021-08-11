@@ -1,5 +1,262 @@
+@import url("https://fonts.googleapis.com/css2?family=Spartan:wght@100&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Comfortaa:wght@300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans+Condensed:wght@300&display=swap");
 * {
   padding: 0%;
   margin: 0%;
   box-sizing: border-box;
+}
+
+body {
+  height: 100vh;
+  width: 100vw;
+  background-color: black;
+  overflow-y: hidden;
+  overflow-x: hidden;
+}
+
+.home {
+  display: flex;
+  height: 100%;
+  width: 100%;
+}
+
+.loginopn {
+  height: 100%;
+  width: 50%;
+
+  background-color: #111;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: 0.5s ease-in;
+}
+
+.signupopn {
+  height: 100%;
+  width: 50%;
+
+  background-color: #dee2e6;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  transition: 0.5s ease-in;
+}
+
+.h {
+  text-transform: uppercase;
+  font-family: "Spartan", sans-serif;
+
+  cursor: pointer;
+}
+
+.first {
+  color: #dee2e6;
+  transition: 0.5s ease-in;
+}
+.second {
+  color: #111;
+  transition: 0.5s ease-in;
+}
+
+/* login card */
+
+.logincrd {
+  height: 50%;
+  width: 40%;
+  border-radius: 38px;
+  background: linear-gradient(315deg, #0f0f0f, #121212);
+  box-shadow: -35px -35px 70px #0f0f0f, 35px 35px 70px #131313;
+  z-index: -20;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+/* signup card */
+.signupcrd {
+  height: 50%;
+  width: 40%;
+  border-radius: 38px;
+  background: linear-gradient(315deg, #c8cbcf, #eef2f6);
+  box-shadow: -35px -35px 70px #c1c5c8, 35px 35px 70px #fbffff;
+
+  z-index: -20;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+/* animations for login */
+.loginopn.active {
+  width: 80%;
+}
+
+.signupopn.inactive {
+  width: 20%;
+}
+
+.first.active {
+  z-index: -1;
+}
+
+.second.inactive {
+  z-index: 0;
+}
+
+.logincrd.active {
+  z-index: 0;
+}
+
+.signupcrd.inactive {
+  z-index: -20;
+}
+
+/* animations for sign up */
+.signupopn.active {
+  width: 80%;
+}
+
+.loginopn.inactive {
+  width: 20%;
+}
+
+.second.active {
+  z-index: -1;
+}
+
+.first.inactive {
+  z-index: 0;
+}
+
+.signupcrd.active {
+  z-index: 0;
+}
+
+.logincrd.inactive {
+  z-index: -20;
+}
+
+/* login form */
+.form1 {
+  flex-direction: column;
+  display: flex;
+  gap: 33px;
+}
+
+.l {
+  color: #dee2e6;
+  text-transform: uppercase;
+  font-family: "Spartan", sans-serif;
+
+  margin-left: 49px;
+}
+
+.luser {
+  border-radius: 54px;
+  background: linear-gradient(145deg, #191919, #111);
+  border: none;
+  height: 23px;
+  color: #d9dde1;
+  font-family: "Comfortaa", sans-serif;
+  outline: none;
+}
+
+.loginbtn {
+  border-radius: 54px;
+  background: linear-gradient(145deg, #1e1e1e, #111);
+  color: #dee2e6;
+
+  font-size: 17px;
+  font-family: "Open Sans Condensed", sans-serif;
+
+  height: 23px;
+
+  border: none;
+
+  cursor: pointer;
+
+  transition: 0.4s ease-in-out;
+}
+
+.loginbtn:hover {
+  color: #0f0f0f;
+  background: #d9dde1;
+}
+
+.username,
+.password {
+  padding: 10px;
+}
+
+/* sign up form */
+
+.form2 {
+  display: flex;
+  flex-direction: column;
+  /* align-items: center; */
+  gap: 18px;
+}
+
+.s {
+  color: #111;
+  text-transform: uppercase;
+  font-family: "Spartan", sans-serif;
+
+  margin-left: 44px;
+}
+
+.suser {
+  border-radius: 54px;
+  background: linear-gradient(145deg, #b7babd, #d9dde1);
+  border: none;
+  height: 23px;
+  font-family: "Comfortaa", sans-serif;
+  outline: none;
+}
+
+.signInButton {
+  font-size: 17px;
+  font-family: "Open Sans Condensed", sans-serif;
+
+  height: 23px;
+
+  border: none;
+
+  transition: 0.4s ease-in-out;
+}
+
+.signInButton:hover {
+  color: #d9dde1;
+  background: #0f0f0f;
+}
+
+.firstName,
+.lastName,
+.username,
+.email,
+.password {
+  padding: 10px;
+}
+
+@media screen and (max-width: 1126px) {
+  .form2 {
+    position: absolute;
+    left: 10%;
+  }
+
+  .second {
+    writing-mode: tb;
+  }
+  .first {
+    writing-mode: tb;
+    transform-origin: center;
+    transform: rotate(180deg);
+  }
 }
