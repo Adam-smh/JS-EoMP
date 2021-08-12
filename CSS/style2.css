@@ -1,0 +1,75 @@
+@import url("https://fonts.googleapis.com/css2?family=Spartan:wght@100&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Comfortaa:wght@300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans+Condensed:wght@300&display=swap");
+
+* {
+  padding: 0%;
+  margin: 0%;
+  box-sizing: border-box;
+}
+
+body {
+  height: 100vh;
+  width: 100vw;
+
+  background-color: black;
+
+  overflow-x: hidden;
+}
+
+.head {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+
+  position: fixed;
+
+  width: 100%;
+  height: 10%;
+
+  background-color: white;
+
+  text-transform: uppercase;
+  font-family: "Spartan", sans-serif;
+
+  cursor: pointer;
+}
+
+.homescr {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url(/pictures/12-julia-robbs-1544042030.jpg);
+  object-fit: contain;
+  background-attachment: fixed;
+  background-size: cover;
+
+  height: 95%;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.logo {
+  margin-top: 8%;
+  width: 25%;
+}
+
+.title {
+  color: white;
+
+  font-family: "Spartan", sans-serif;
+  font-size: 60px;
+}
+
+.ext {
+  height: 20%;
+  background: white;
+  width: 100%;
+}
+
+.specials {
+  height: 100vh;
+  background: black;
+}
