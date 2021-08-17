@@ -19,7 +19,7 @@ function loginbtn() {
     .then((data) => {
       if (data["access_token"]) {
         fetch(
-          `http://powerful-cove-00684.herokuapp.com/get-user/'${username}'/`,
+          `https://powerful-cove-00684.herokuapp.com/get-user/'${username}'/`,
           {
             method: "GET",
             headers: {
