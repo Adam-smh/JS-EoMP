@@ -5,13 +5,13 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Minimalists</title>
-    <link rel="stylesheet" href="./style.css" />
+    <link rel="stylesheet" href="./CSS/style.css" />
   </head>
   <body>
     <div class="home">
       <div class="loginopn">
         <div class="logincrd">
-          <form class="form1" action="">
+          <form class="form1" onsubmit="loginbtn(); return false">
             <h2 class="l">Login</h1>
               <input class="username luser" name="username" type="text" placeholder="Username"/>
               <input class="password luser" name="password" type="password" placeholder="Password"/>
@@ -23,7 +23,7 @@
       <div class="signupopn">
         <h1 class="h second">signup</h1>
         <div class="signupcrd">
-          <form action="" class="form2">
+          <form action="" class="form2" onsubmit="register(); return false">
             <h2 class="s">Sign Up</h2>
             <input class="firstName suser" type="text" name="first_name" placeholder="First Name">
             <input class="lastName suser" type="text" name="last_name" placeholder="Last Name">
@@ -36,6 +36,7 @@
       </div>
     </div>
 
-    <script src="./Animations.js"></script>
+    <script src="./JS/Animations.js"></script>
+    <script src="./JS/login-register.js"></script>
   </body>
 </html>
