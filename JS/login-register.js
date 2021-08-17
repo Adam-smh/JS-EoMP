@@ -38,6 +38,7 @@ function loginbtn() {
         myStorage.setItem("jwt-token", data["access_token"]);
         myStorage.setItem("username", username);
         myStorage.setItem("password", password);
+        window.location.href = "/main.html";
       }
     });
 }
