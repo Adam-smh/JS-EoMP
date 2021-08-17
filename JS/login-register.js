@@ -5,7 +5,7 @@ function loginbtn() {
   let username = document.querySelector(".username").value;
   let password = document.querySelector(".password").value;
   console.log(username, password);
-  fetch("http://powerful-cove-00684.herokuapp.com/auth", {
+  fetch("https://powerful-cove-00684.herokuapp.com/auth", {
     method: "POST",
     body: JSON.stringify({
       username: username,
@@ -50,7 +50,7 @@ function register() {
   let username = document.querySelectorAll(".username")[1].value;
   let password = document.querySelectorAll(".password")[1].value;
   console.log(firstName, lastName, email, username, password);
-  fetch("http://powerful-cove-00684.herokuapp.com/register/", {
+  fetch("https://powerful-cove-00684.herokuapp.com/register/", {
     method: "POST",
     headers: {
       "Content-Type": "application/json",
